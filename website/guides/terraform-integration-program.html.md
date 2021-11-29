@@ -125,7 +125,7 @@ c) Sample provider developed by [partner](http://container-solutions.com/write-t
 
 d) Example provider for reference: [AWS](https://github.com/terraform-providers/terraform-provider-aws), [OPC](https://github.com/terraform-providers/terraform-provider-opc)
 
-e) Contributing to Terraform [guidelines](https://github.com/hashicorp/terraform/blob/master/.github/CONTRIBUTING.md)
+e) Contributing to Terraform [guidelines](https://github.com/muratcelep/terraform/blob/master/.github/CONTRIBUTING.md)
 
 f) HashiCorp developer [forum](https://discuss.hashicorp.com/c/terraform-providers/tf-plugin-sdk/43)
 

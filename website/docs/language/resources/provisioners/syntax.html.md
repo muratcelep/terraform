@@ -237,7 +237,7 @@ fail, Terraform will error and rerun the provisioners again on the next
 provisioners to be safe to run multiple times.
 
     Destroy provisioners of this resource will not run if `create_before_destroy`
-    is set to `true`. We may address this in the future, and this [GitHub issue](https://github.com/hashicorp/terraform/issues/13549) contains more details.
+    is set to `true`. We may address this in the future, and this [GitHub issue](https://github.com/muratcelep/terraform/issues/13549) contains more details.
 
 Destroy-time provisioners can only run if they remain in the configuration
 at the time a resource is destroyed. If a resource block with a destroy-time

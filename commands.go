@@ -10,14 +10,14 @@ import (
 	svchost "github.com/hashicorp/terraform-svchost"
 	"github.com/hashicorp/terraform-svchost/auth"
 	"github.com/hashicorp/terraform-svchost/disco"
-	"github.com/hashicorp/terraform/not_internal/addrs"
-	"github.com/hashicorp/terraform/not_internal/command"
-	"github.com/hashicorp/terraform/not_internal/command/cliconfig"
-	"github.com/hashicorp/terraform/not_internal/command/views"
-	"github.com/hashicorp/terraform/not_internal/command/webbrowser"
-	"github.com/hashicorp/terraform/not_internal/getproviders"
-	pluginDiscovery "github.com/hashicorp/terraform/not_internal/plugin/discovery"
-	"github.com/hashicorp/terraform/not_internal/terminal"
+	"github.com/muratcelep/terraform/not-internal/addrs"
+	"github.com/muratcelep/terraform/not-internal/command"
+	"github.com/muratcelep/terraform/not-internal/command/cliconfig"
+	"github.com/muratcelep/terraform/not-internal/command/views"
+	"github.com/muratcelep/terraform/not-internal/command/webbrowser"
+	"github.com/muratcelep/terraform/not-internal/getproviders"
+	pluginDiscovery "github.com/muratcelep/terraform/not-internal/plugin/discovery"
+	"github.com/muratcelep/terraform/not-internal/terminal"
 )
 
 // runningInAutomationEnvName gives the name of an environment variable that
@@ -402,7 +402,7 @@ func initCommands(
 
 	HiddenCommands = map[string]struct{}{
 		"env":             struct{}{},
-		"not_internal-plugin": struct{}{},
+		"not-internal-plugin": struct{}{},
 		"push":            struct{}{},
 	}
 

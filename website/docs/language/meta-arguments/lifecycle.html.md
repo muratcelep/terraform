@@ -49,7 +49,7 @@ The following arguments can be used within a `lifecycle` block:
     type before using `create_before_destroy` with it.
 
     Destroy provisioners of this resource will not run if `create_before_destroy`
-    is set to `true`. We may address this in the future, and this [GitHub issue](https://github.com/hashicorp/terraform/issues/13549) contains more details.
+    is set to `true`. We may address this in the future, and this [GitHub issue](https://github.com/muratcelep/terraform/issues/13549) contains more details.
 
 * `prevent_destroy` (bool) - This meta-argument, when set to `true`, will
   cause Terraform to reject with an error any plan that would destroy the
