@@ -1,4 +1,4 @@
-module github.com/hashicorp/terraform
+module github.com/muratcelep/terraform
 
 require (
 	cloud.google.com/go/storage v1.10.0
