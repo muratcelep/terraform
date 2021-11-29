@@ -42,17 +42,17 @@ type protocStep struct {
 var protocSteps = []protocStep{
 	{
 		"tfplugin5 (provider wire protocol version 5)",
-		"internal/tfplugin5",
+		"not_internal/tfplugin5",
 		[]string{"--go_out=paths=source_relative,plugins=grpc:.", "./tfplugin5.proto"},
 	},
 	{
 		"tfplugin6 (provider wire protocol version 6)",
-		"internal/tfplugin6",
+		"not_internal/tfplugin6",
 		[]string{"--go_out=paths=source_relative,plugins=grpc:.", "./tfplugin6.proto"},
 	},
 	{
 		"tfplan (plan file serialization)",
-		"internal/plans/internal/planproto",
+		"not_internal/plans/not_internal/planproto",
 		[]string{"--go_out=paths=source_relative:.", "planfile.proto"},
 	},
 }

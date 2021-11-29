@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/hashicorp/terraform/internal/command/cliconfig"
+	"github.com/hashicorp/terraform/not_internal/command/cliconfig"
 )
 
 // globalPluginDirs returns directories that should be searched for
