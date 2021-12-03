@@ -171,7 +171,7 @@ func (b *Local) localRunDirect(op *backend.Operation, run *backend.LocalRun, cor
 		// but unset variables with unknown values to represent that they are
 		// placeholders for values the user would need to provide for other
 		// operations.
-		rawVariables = b.stubUnsetRequiredVariables(op.Variables, config.Module.Variables)
+		rawVariables = b.StubUnsetRequiredVariables(op.Variables, config.Module.Variables)
 	} else {
 		// If interactive input is enabled, we might gather some more variable
 		// values through interactive prompts.
@@ -417,7 +417,7 @@ func (b *Local) interactiveCollectVariables(ctx context.Context, existing map[st
 //
 // Unset optional attributes (those with default values) will not be populated
 // by this function, under the assumption that a later step will handle those.
-// In this sense, stubUnsetRequiredVariables is essentially a non-interactive,
+// In this sense, StubUnsetRequiredVariables is essentially a non-interactive,
 // non-error-producing variant of interactiveCollectVariables that creates
 // placeholders for values the user would be prompted for interactively on
 // other operations.
