@@ -407,7 +407,7 @@ func (b *Local) interactiveCollectVariables(ctx context.Context, existing map[st
 	return ret
 }
 
-// stubUnsetVariables ensures that all required variables defined in the
+// StubUnsetVariables ensures that all required variables defined in the
 // configuration exist in the resulting map, by adding new elements as necessary.
 //
 // The stubbed value of any additions will be an unknown variable conforming
@@ -431,7 +431,7 @@ func (b *Local) interactiveCollectVariables(ctx context.Context, existing map[st
 // the given map unchanged if no additions are required. If additions are
 // required then the result will be a new map containing everything in the
 // given map plus additional elements.
-func (b *Local) stubUnsetRequiredVariables(existing map[string]backend.UnparsedVariableValue, vcs map[string]*configs.Variable) map[string]backend.UnparsedVariableValue {
+func (b *Local) StubUnsetRequiredVariables(existing map[string]backend.UnparsedVariableValue, vcs map[string]*configs.Variable) map[string]backend.UnparsedVariableValue {
 	var missing bool // Do we need to add anything?
 	for name, vc := range vcs {
 		if !vc.Required() {
